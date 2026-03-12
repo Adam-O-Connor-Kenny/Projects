@@ -31,23 +31,6 @@ def squares(a6, b6):
     print()
 
 
-def upper(Str):
-    up = 0
-    low = 0
-    for i in Str:
-        if i.isupper():
-            up += 1
-        elif i.islower():
-            low += 1
-    print('Number in original string' ,up+low)
-    print('Number of upper case: ', up)
-    print('Number of lower case: ', low)
-
-
-def element(Str2, num):
-    print('Character', Str2[num - 1])
-    if num < 1 or num > len(Str2):
-        print('number not allowed')
 ##Definitions, this will likely be butchered as i make the HTML work##
 
  if Option =='1':
@@ -74,13 +57,6 @@ def element(Str2, num):
         a6 = int(input('enter the lower limit: '))
         b6 = int(input('enter the upper limit: '))
         squares(a6, b6)
-    elif Option =='7':
-        Str=str(input('enter the string that you want to check'))
-        upper(Str)
-    elif Option =='8':
-        Num=int(input('enter the number index to check'))
-        Str2=str(input('enter the string that you want to check'))
-        element(Str2, Num)
 
 ##This is how it works, very basic and will 100 percent need to be changed when i make the HTML, was originally made for just being run in python.##
 
